@@ -1,0 +1,33 @@
+package practice;
+
+import java.util.Scanner;
+
+public class AgeGame 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		int usersAge;
+		String result;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Please enter your age to be insulted");
+		usersAge = input.nextInt();
+
+	
+		if(usersAge <=12)
+		{
+			result = "You are a child! Leave now!";
+		}
+		else if (usersAge >= 13 && usersAge <=18)
+		{
+			result = "You're almost an adult, almost!";
+		}
+		else if (usersAge >= 19 && usersAge <=25)
+		{
+			result ="Do something with yah life bud!";
+		}
+	}
+}
